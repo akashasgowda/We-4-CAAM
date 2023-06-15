@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-family: "Poppins",sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+h1{
+ color: #fff;   
+ font-size: 35px;
+}
+h4{
+    margin-top:20px ;
+    color: #fff;
+    font-size: 25px;
+}
+h4
+.content{
+    margin: auto;
+}
+
+p{
+    color: white;
+    overflow: hidden;
+    position:relative;
+    font-size: 25px;
+    display: inline;
+}
+
+p::after{
+    content: "Developer";
+    display: inline-block;
+    animation :animation 6.5s steps(9) infinite;
+    width: 0ch;
+    color: lightseagreen;
+}
+
+p::before{
+    display:inline-block;
+    content: "";
+    width: 2px;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    animation:blinking .4s linear alternate infinite;
+}
+
+@keyframes animation{
+    25%{
+        content:"Engineer";
+        width: 9ch;
+    }
+    40%{
+        width: 0ch;
+    }
+    75%{
+        content:"Designer";
+        width: 7.5ch;
+    }
+    90%{
+        width: 0ch;
+    }
+}
+
+
+@keyframes blinking{
+    100%{
+        opacity: 0;
+    }
+}
