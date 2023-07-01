@@ -18,6 +18,22 @@ body{
 html{
     font-size: 62.5%;
 }
+
+header{
+    color: #444;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 25px;
+    font-size: 20px;
+    background-color: #ccc;
+    width: 100%;
+
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+}
 h1{
  color: #fff;   
  font-size: 35px;
